@@ -14,6 +14,6 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
 	cm-super \
 	texlive-generic-extra
 
-COPY CV /CV
+# COPY CV /CV
 
-CMD ["pdflatex","-interaction=nonstopmode", "/CV/Kabakov.tex"]
+CMD ["pdflatex","-interaction=nonstopmode", "-output-directory=CV", "/CV/Kabakov.tex"]
