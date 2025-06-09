@@ -8,6 +8,7 @@
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
+\usepackage{soul}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
@@ -81,8 +82,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -150,10 +151,10 @@
 \begin{center}
     {\Huge \scshape Ivan Kabakov} \\ \vspace{1pt}
     Moscow, Russia \\ \vspace{1pt}
-    \small \href{tel:+7(985)6152207}{ \raisebox{-0.1\height}\faPhone\ \underline{+7(985)615-22-07} ~} \href{mailto:hexwhyzet@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{hexwhyzet@gmail.com}} ~ 
-    \href{https://linkedin.com/in/ivan-kabakov-a37aa4191/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{Ivan Kabakov}}  ~
-    \href{https://github.com/hexwhyzet}{\raisebox{-0.2\height}\faGithub\ \underline{hexwhyzet}}
-    \vspace{-8pt}
+    \small \href{tel:+7(985)6152207}{ \raisebox{-0.1\height}\faPhone\ \ul{+7(985)615-22-07} ~} \href{mailto:hexwhyzet@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \ul{hexwhyzet@gmail.com}} ~ 
+    \href{https://linkedin.com/in/ivan-kabakov-a37aa4191/}{\raisebox{-0.2\height}\faLinkedinSquare\ \ul{Ivan Kabakov}}  ~
+    \href{https://github.com/hexwhyzet}{\raisebox{-0.2\height}\faGithub\ \ul{hexwhyzet}}
+    \vspace{5pt}
 \end{center}
 
 
@@ -164,6 +165,7 @@
       {Higher School of Economics}{Septempber 2020 -- July 2024}
       {B.Sc. Applied Mathematics and Computer Science}{Moscow, Russia}
   \resumeSubHeadingListEnd
+  \vspace{-3pt}
 
 
 %------RELEVANT COURSEWORK-------
@@ -185,84 +187,111 @@
 %     %\resumeSubHeadingListEnd
 
 
+%-----------EXPERIENCE-----------
+\section{WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Yandex Ads Tech}{August 2022 - July 2024} 
+      {\underline{Software Engineer, Backend Developer C++/Python}}{Moscow, Russia}
+      \resumeItemListStart
+        \resumeItem{\normalsize{worked on advertising engine (bannner auction service), №1 advertising network in Russia}}
+        \resumeItem{\normalsize{was developing backend for mobile apps advertising, introduced feed banner generation for mobile apps}}
+        \resumeItem{\normalsize{created new mobile app ads format, enhanced integration of mobile app ads in SSP}}
+        \resumeItem{\normalsize{introduced batch processing of multi-SSP requests, reduced request processing time 50\% }}
+  
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
 
 %-----------PROJECTS-----------
-\section{PERSONAL PROJECTS (available on my github)}
+\section{PERSONAL PROJECTS}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-          {\href{potok.app}{\textbf{\large{\underline{Potok app}}} \href{https://github.com/hexwhyzet/potok-server}{\raisebox{-0.1\height}}} $|$ \large{\underline{Django + PostgreSQL + Flutter}}}{since May 2020}
+          {\textbf{\large{{Morpheus.AR}}} $|$ \large{\href{}{\ul{WebASM + WebGL}} \space\space\space }}{December 2024 - March 2025}
           \resumeItemListStart
-            \resumeItem{\normalsize{A social media aggregator similar in interface to TikTok but with static content}}
-            \resumeItem{\normalsize{Developed an REST Api backend server, content aggregator for VK, Reddit and Instagram and multiplatform Flutter APP}}
-          \resumeItemListEnd 
-          \vspace{-7pt}
-          
-        \resumeProjectHeading
-          {\href{0xleaders.com}{\textbf{\large{\underline{0xLeaders.com NFTs}}} \href{https://github.com/hexwhyzet/LeadersFrontend}{\raisebox{-0.1\height}}} $|$ \large{\underline{Node.js + Web3 + Python3/Pillow + ETH Smart Contracts + Truffle}}}{October 2021}
-          \resumeItemListStart
-            \resumeItem{\normalsize{created NFT collection and minting website}}
-            \resumeItem{\normalsize{Designed and generated 2200 NFT cards of world leaders based on scientific databases}}
-            \resumeItem{\normalsize{Coded website for advertising and minting these NFTs (minting is a process of loading NFT to blockchain)}}
+            \resumeItem{\normalsize{developed MVP for WebAR project with image tracking}}
           \resumeItemListEnd
           \vspace{-7pt}
-          
+        
         \resumeProjectHeading
-          {{\textbf{\large{Webapp for NASA Hackathon}} \href{https://github.com/hexwhyzet/spaceapp2020}{\raisebox{-0.1\height}}} $|$ \large{\underline{Node.js}}}{December 2020}
+          {\textbf{\large{{HSE Robotics Lab}}} $|$ \large{\href{https://github.com/robotics-laboratory/truck}{\ul{ROS + G2O + Libpointmatcher}} \space\space\space }}{January - June 2024}
           \resumeItemListStart
-            \resumeItem{\normalsize{created webapp that simulates earth and satellites from the NASA database and talks about the problem of space debris}}
+            \resumeItem{\normalsize{developed tool for constructing 2d map from LiDar scans for lab's self-driving indoor RC car project}}
           \resumeItemListEnd
           \vspace{-7pt}
-          
+    
         \resumeProjectHeading
-          {{\textbf{\large{WWDC21 Scholarship Submission}} \href{https://github.com/hexwhyzet/spaceapp2020}{\raisebox{-0.1\height}}} $|$ \large{\underline{iOS development}}}{May 2021}
+          {\textbf{\large{{Moscow Place Recognition}}} $|$ \large{\href{https://github.com/hexwhyzet/place-recognition-backend}{\ul{PyTorch + FastAPI}} \space\space\space \href{https://youtu.be/bxEKlWD3Tg0}{\ul{YouTube Demo}}}}{January - June 2023}
           \resumeItemListStart
-            \resumeItem{\normalsize{Received WWDC21 Scholarship award for my Conway's Game of Life app}}
+             \resumeItem{\normalsize{introduced and implemented the idea of on-device descriptor inference to enable private image-based location recognition and reduce server-side compute costs}}
+            \resumeItem{\normalsize{created place recognition system on scale of a district or a small city based on MixVPR}}
+            \resumeItem{\normalsize{introduced dataset scaling based on street panoramas from internet maps}}
+          \resumeItemListEnd
+          \vspace{-7pt}
+        
+        % \resumeProjectHeading
+        %   {\textbf{\large{\href{https://0xLeaders.com}{\ul{0xLeaders.com NFTs}}}} $|$ \large{\href{https://github.com/hexwhyzet/LeadersFrontend}{\ul{Node.js + Python3/Pillow + ETH Smart Contracts + Truffle}}}}{October 2021}
+        %   \resumeItemListStart
+        %     \resumeItem{\normalsize{created NFT collection and minting website}}
+        %     \resumeItem{\normalsize{designed and generated 2200 NFT cards of world leaders based on scientific databases}}
+        %     \resumeItem{\normalsize{coded website for advertising and minting these NFTs (minting is a process of loading NFT to blockchain)}}
+        %   \resumeItemListEnd
+        %   \vspace{-7pt}
+
+        % \resumeProjectHeading
+        %   {\textbf{\large{Potok app}} $|$ \large{\href{https://github.com/hexwhyzet/potok-server}{\ul{Django + PostgreSQL}} + \href{https://github.com/hexwhyzet/potok_mobile}{\ul{Flutter}}}}{2020 - 2021}
+        %   \resumeItemListStart
+        %     \resumeItem{\normalsize{created a social media aggregator similar in interface to TikTok but with static content}}
+        %     \resumeItem{\normalsize{developed a backend server, content aggregator for VK, Reddit and Instagram and multiplatform Flutter app}}
+        %   \resumeItemListEnd 
+        %   \vspace{-7pt}
+          
+        % \resumeProjectHeading
+        %   {{\textbf{\large{Webapp for NASA Hackathon}}} $|$ \large{\href{https://github.com/hexwhyzet/spaceapp2020}{\ul{Node.js}}}}{December 2020}
+        %   \resumeItemListStart
+        %     \resumeItem{\normalsize{created webapp that simulates earth and satellites from NASA database and talks about the problem of space debris}}
+        %   \resumeItemListEnd
+        %   \vspace{-7pt}
+          
+        % \resumeProjectHeading
+        %   {{\textbf{\large{WWDC21 Scholarship Awardee}}} $|$ \large{iOS development}}{May 2021}
+        %   \resumeItemListStart
+        %     \resumeItem{\normalsize{received Apple WWDC21 Scholarship award for my Conway's Game of Life app}}
             
-          \resumeItemListEnd 
+        %   \resumeItemListEnd 
           
     \resumeSubHeadingListEnd
-\vspace{-12pt}
+\vspace{-5pt}
 
 %
 
 
-% %-----------EXPERIENCE-----------
-% \section{INTERNSHIP}
-%   \resumeSubHeadingListStart
-
-%     \resumeSubheading
-%       {Company Name \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{MM YYYY -- MM YYYY} 
-%       {\underline{Role Name}}{city, country}
-%       \resumeItemListStart
-%         \resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
-  
-%       \resumeItemListEnd  
-%   \resumeSubHeadingListEnd
-% \vspace{-12pt}
-
-
 %-----------PROGRAMMING SKILLS-----------
-\section{TECHNICAL SKILLS}
+\section{SKILLS}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{\normalsize{Languages:}}{ \normalsize{Python, C++, Dart, JavaScript, Swift}} \\
-     \textbf{\normalsize{Developer Tools:}}{ \normalsize{JetBrains software, Postman}} \\
-     \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ Django, Flutter, ReactJS, NodeJS, iOS }} \\
+     \textbf{\normalsize{Primary programming languages:}}{ \normalsize{C++, Python}} \\
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{JetBrains, VSCode}} \\
+     % \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ Django, Flutter, iOS }} \\
+     \textbf{\normalsize{Languages:}}{\normalsize{ English(fluent), Russian(native), German(B2) }} \\
     }}
  \end{itemize}
  \vspace{-15pt}
 
 
 %-----------INVOLVEMENT---------------
-% \section{EXTRACURRICULAR}
-%     \resumeSubHeadingListStart
-%         \resumeSubheading{Organization Name \href{Certificate Proof link}{\raisebox{-0.1\height}\faExternalLink } }{MM YYYY -- MM YYYY}{\underline{Role}}{Location}
-%             \resumeItemListStart
-%                 \resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
-%                 \resumeItem{\normalsize{Participation Certificate. \href{ParticipationCertificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}
-%             \resumeItemListEnd
-%     \resumeSubHeadingListEnd
-%  \vspace{-11pt}
+\section{ABOUT ME}
+    I am deeply interested in social studies, enjoy playing tennis
+    % \resumeSubHeadingListStart
+    %     \resumeSubheading{Organization Name \href{Certificate Proof link}{\raisebox{-0.1\height}\faExternalLink } }{MM YYYY -- MM YYYY}{\underline{Role}}{Location}
+    %         \resumeItemListStart
+    %             \resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
+    %             \resumeItem{\normalsize{Participation Certificate. \href{ParticipationCertificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}
+    %         \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+ % \vspace{-11pt}
  
  %-----------CERTIFICATIONS---------------
 % \section{CERTIFICATIONS}
@@ -281,3 +310,4 @@
 
 
 \end{document}
+
